@@ -1,0 +1,15 @@
+* {
+    background-color: bisque;
+}
+
+img{
+    border: 5px solid black;
+}
+
+.pict{
+    text-align: center;
+}
+.text{
+    text-align: center;
+    font-size: 15;
+}
