@@ -13,3 +13,8 @@ img{
     text-align: center;
     font-size: 15;
 }
+
+.table-characteristic{
+    border: 1px;
+    border-radius: 5px solid blue;
+}
