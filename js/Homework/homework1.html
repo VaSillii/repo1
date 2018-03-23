@@ -66,71 +66,37 @@
 -->
 
 <!--Third task-->
-<!--
-<script>
+<!--<script>
     var x;
     x = prompt("Введите число от 0 до 9");
     x = parseFloat(x);
-    if(x>=0 && x <= 9){
-        if(x === 0){
-            console.log("Ноль");
-        }
-        if(x === 1){
-            console.log("Один");
-        }
-        if(x === 2){
-            console.log("Два");
-        }
-        if(x === 3){
-            console.log("Три");
-        }
-        if(x === 4){
-            console.log("Четыре");
-        }
-        if(x === 5){
-            console.log("Пять");
-        }
-        if(x === 6){
-            console.log("Шесть");
-        }
-        if(x === 7){
-            console.log("Семь");
-        }
-        if(x === 8){
-            console.log("Восемь");
-        }
-        if(x === 9){
-            console("Девять");
-        }
-    }else{
-        console.log("Некорректное число");
+    switch(x){
+        case 0: {console.log("Ноль"); break;}
+        case 1: {console.log("Один"); break;}
+        case 2: {console.log("Два"); break;}
+        case 3: {console.log("Три"); break;}
+        case 4: {console.log("Четыре"); break;}
+        case 5: {console.log("Пять"); break;}
+        case 6: {console.log("Шесть"); break;}
+        case 7: {console.log("Семь"); break;}  
+        case 9: {console.log("Восемь"); break;}
+        case 9: {console.log("Девять"); break;} 
+        default: console.log("Некорректное значение");
     }
-</script>
--->
+</script>-->
 
 <!--Fourth task-->
 <!--<script>
     var x;
     x = prompt("Введите число от 1 до 5");
     x = parseInt(x);
-    if(x >=1 && x <= 5){
-        if(x === 1){
-            console.log("Плохо");
-        }
-        if(x === 2){
-            console.log("Неудовдетворительно");
-        }
-        if(x === 3){
-            console.log("Удовдетворительно");
-        }
-        if(x === 4){
-            console.log("Хорошо");
-        }
-        if(x === 5){
-            console.log("Отлично");
-        }
-    }else{
-        console.log("Некорректное число");
+    switch (x){
+        case 1: {console.log("Плохо"); break;}
+        case 2: {console.log("Неудовдетворительно"); break;}
+        case 3: {console.log("Удовдетворительно"); break;}
+        case 4: {console.log("Хорошо"); break;}
+        case 5: {console.log("Отлично"); break;}
+        default: console.log("Некорректное число");
     }
 </script>-->
 
