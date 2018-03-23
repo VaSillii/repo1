@@ -33,37 +33,37 @@
 
 
 <!--Second task-->
-<!--
-<script>
+<!--<script>
     var x;
     x = prompt("Введите число в диапозоне от -999 до 999");
     x = parseFloat(x);
     var str = "";
     if (x >= -999 && x <= 999){
-       if(x >0){
-           str = "Положительное";
-       }else{
-           str = "Отрицатеьное";
-       }
-       if(Math.abs(x) >= 100 && Math.abs(x) <=999){
-           str += " трехзначное ";
-       }
-       if(Math.abs(x) >= 10 && Math.abs(x) < 100){
-           str += " двухзначное ";
-       }
-       if(Math.abs(x) >= 1 && Math.abs(x) < 10){
-           str += " однозначное "; 
-       }
-       if(Math.abs(x) === 0){
+       if(x === 0){
            str = "нулевое ";
+       }else{
+           if(x > 0){
+               str = "Положительное";
+           }else{
+               str = "Отрицатеьное";
+           }
+           x = Math.abs(x);
+           if(x < 10){
+               str += " однозначное "; 
+           }else{
+               if(x < 100){
+                   str += " двухзначное ";
+               }else{
+                   str += " трехзначное ";
+               }
+           }
        }
        str += "число";
        console.log(str); 
     }else{
         console.log("Некорректное число");
     }
-</script>
--->
+</script>-->
 
 <!--Third task-->
 <!--<script>
@@ -71,16 +71,16 @@
     x = prompt("Введите число от 0 до 9");
     x = parseFloat(x);
     switch(x){
-        case 0: {console.log("Ноль"); break;}
-        case 1: {console.log("Один"); break;}
-        case 2: {console.log("Два"); break;}
-        case 3: {console.log("Три"); break;}
-        case 4: {console.log("Четыре"); break;}
-        case 5: {console.log("Пять"); break;}
-        case 6: {console.log("Шесть"); break;}
-        case 7: {console.log("Семь"); break;}  
-        case 9: {console.log("Восемь"); break;}
-        case 9: {console.log("Девять"); break;} 
+        case 0: console.log("Ноль"); break;
+        case 1: console.log("Один"); break;
+        case 2: console.log("Два"); break;
+        case 3: console.log("Три"); break;
+        case 4: console.log("Четыре"); break;
+        case 5: console.log("Пять"); break;
+        case 6: console.log("Шесть"); break;
+        case 7: console.log("Семь"); break;  
+        case 8: console.log("Восемь"); break;
+        case 9: console.log("Девять"); break; 
         default: console.log("Некорректное значение");
     }
 </script>-->
@@ -91,11 +91,11 @@
     x = prompt("Введите число от 1 до 5");
     x = parseInt(x);
     switch (x){
-        case 1: {console.log("Плохо"); break;}
-        case 2: {console.log("Неудовдетворительно"); break;}
-        case 3: {console.log("Удовдетворительно"); break;}
-        case 4: {console.log("Хорошо"); break;}
-        case 5: {console.log("Отлично"); break;}
+        case 1: console.log("Плохо"); break;
+        case 2: console.log("Неудовдетворительно"); break;
+        case 3: console.log("Удовдетворительно"); break;
+        case 4: console.log("Хорошо"); break;
+        case 5: console.log("Отлично"); break;
         default: console.log("Некорректное число");
     }
 </script>-->
