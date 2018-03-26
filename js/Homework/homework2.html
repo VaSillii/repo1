@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--   First task-->
+<!--
+    <script>
+        var X, Y;
+        X = prompt("Введите X = ", X);
+        Y = prompt("Введите Y = ", Y);
+        if (X < Y){}
+        else{
+            var z;
+            z = X;
+            X = Y;
+            Y = z;
+            
+        }
+        alert(X + " " + Y);
+    </script>
+-->
+   
+   
+<!--   Second task-->
+<!--
+    <script>
+        function lenSide(x1, y1, z1, x2, y2, z2){
+            return Math.pow(x1-x2,2)+Math.pow(y1-y2,2) + Math.pow(z1-z2,2);
+        }
+        function triangleSide (a, b, c){
+            if (a === b + c) return true;
+            else return false;
+        }
+        var x1, x2, x3;
+        var y1, y2, y3;
+        var z1, z2, z3;
+        x1 = prompt("x1 = ", x1); 
+        y1 = prompt("y1 = ", y1);
+        z1 = prompt("z1 = ", z1);
+        x2 = prompt("x2 = ", x2);
+        y2 = prompt("y2 = ", y2);
+        z2 = prompt("z2 = ", z2);
+        x3 = prompt("x3 = ", x3);
+        y3 = prompt("y3 = ", y3);
+        z3 = prompt("z3 = ", z3);
+        x1 = parseFloat(x1);
+        x2 = parseFloat(x2);
+        x3 = parseFloat(x3);
+        y1 = parseFloat(y1);
+        y2 = parseFloat(y2);
+        y3 = parseFloat(y3);
+        z1 = parseFloat(z1);
+        z2 = parseFloat(z2);
+        z3 = parseFloat(z3);
+        
+        var a, b, c;
+        a = lenSide(x1, y1, z1, x2, y2, z2); 
+        b = lenSide(x1, y1, z1, x3, y3, z3);
+        c = lenSide(x2, y2, z2, x3, y3, z3);
+        console.log(a, " ", b, " ", c);
+        if (a > a+b || b > a+c || c > a + b){
+            if (triangleSide(a, b, c) || triangleSide(b, c, a) || triangleSide(c, a, b)) alert("Треугольник прямокгольный!");
+            else alert("Треугольник не прямоугольный!");
+        }else alert("Треугольник не существует!");
+        
+    </script>
+-->
+
+
+<!--    Third task-->
+<!--    <script>
+        var x;
+        x = prompt("Введите номер месяца: ", x);
+        x = parseInt(x);
+        switch(x){
+            case 1: 
+            case 2:
+            case 12: 
+                alert("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5: 
+                alert("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                alert("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11: 
+                alert("Осень");
+                break;
+            default: alert("Некорректное значение месяца");
+        }
+    </script>
+-->
+
+<!--Fourt task-->
+<!--
+    <script>
+        var x, y;
+        x = prompt("Введите номер единицы длины:", x);
+        y = prompt("Ведите длину:", y);
+        x = parseInt(x);
+        y = parseFloat(y);
+        switch (x) {
+            case 1: 
+                alert(y / 10);
+                break;
+            case 2:
+                alert(y * Math.pow(10,3));
+                break;
+            case 3:
+                alert(y);
+                break;
+            case 4:
+                alert(y / Math.pow(10,3));
+                break;
+            case 5:
+                alert(y / Math.pow(10,2));
+                break;
+            default: alert("Некорректный номер единицы длины");
+        }
+    </script>
+-->
+
+<!--Fifth task-->
+<script>
+    var tableHTML = "<table><tr><th>число</th><th>результат</th></tr>";
+    var i = 1;
+    while (i < 11){
+        if(i%2){
+			tableHTML+='<tr style = "background-color:red;">';
+		} else {
+			tableHTML+='<tr style = "background-color:green;">';
+		}
+
+        tableHTML+="<td>" + i + "</td><td>" + i*10 + "</td></tr>";
+		i++;
+    }
+    tableHTML+="</table";
+    document.write(tableHTML);
+</script>
+</body>
+</html>
