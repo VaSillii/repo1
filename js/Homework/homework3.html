@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--    First task-->
+<!--
+    <script>
+        var str = prompt("Введите число: ");
+        var sum = 0;
+        for (i = 0; i < str.length; i++){
+            var number = parseInt(str[i]);
+            sum += number;
+        }
+        alert(sum);
+    </script>
+-->
+
+<!--Second task-->
+<!--
+    <script>
+        var str = prompt("Введите строку:");
+        alert(str.replace(/C/g,"CC"))
+    </script>
+-->
+
+<!--Third task-->
+    <script>
+        var password = prompt("Введите пароль:");
+        var reg = /(?=.*[0-9])(?=.*[!@#$%^&])(?=.*[A-Za-z])[0-9!@#$%^&A-Za-z]{9,}/g
+        alert(reg.test(password));
+    </script>
+</body>
+</html>
