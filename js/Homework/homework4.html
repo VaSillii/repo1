@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--firtst task-->
+<!--
+    <script>
+        let arrA = [1,2,3,4,5];
+        let arrB = [6,7,8,9,10];
+        let arrC = [];
+        arrC = arrC.concat(arrB,arrA,arrB);
+        alert(arrC);
+    </script>
+-->
+
+<!--task 2-->
+    <script>
+        let a = [ 1, null, 0, null, 1, null, null, null, null ];
+        
+    </script>
+
+<!--Third task-->
+<!--
+    <script>
+        let array = [12,4,3,10,1,20];
+        function arrayMax(array) {
+            return array.reduce(function(a, b) {
+                return Math.max(a, b);
+            })
+        };
+        function arrayMin(array) {
+            return array.reduce(function(a,b) {
+                return Math.min(a,b);
+            })
+        }
+        let max = arrayMax(array);
+        let min = arrayMin(array);
+        for (let i = 0; i < array.length; i++){
+            if (array[i] === min || array[i] === max){
+                delete(array[i]);
+            }
+        }
+        alert(array);
+    </script>
+-->
+
+<!--task 4-->
+<!--
+    <script>
+        let arr = [12,4,3,10,1,20];
+        for (let i = 0; i < arr.length; i++){
+            let j = i-1;
+            let x = arr[i];
+            while(j >= 0 && arr[j] > x){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = x;
+        }
+        
+        alert(arr);
+    </script>
+-->
+</body>
+</html>
