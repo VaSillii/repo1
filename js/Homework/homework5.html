@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--    first task-->
+<!--
+    <script>
+        function info(obj){
+            for(let key in  obj){
+                    console.log(key + " значение: " + obj[key]);
+            }
+        }
+        var student = {
+            name: "Student",
+            lastName: "Stud",
+            age: 18,
+            interest:["web", "javaScript"],
+            placeOfStudy: "university"
+        }
+        let x = info(student);
+    </script>
+-->
+
+<!--task2-->
+<!--
+    <script>
+        function mergeArray(a,b){
+            a = a.concat(b);
+            let maxlength = a.length;
+            let c = [];
+            for (let i = 0; i < maxlength; i++)
+                if (c.indexOf(a[i]) === -1)
+                    c.push(a[i]);
+            return c;
+        }
+        let a = [1,2,3,4];
+        let b = [3,4,5,6];
+        console.log(mergeArray(a,b));
+    </script>
+-->
+
+<!--task 3-->
+<!--
+    <script>
+        function fibonachi(n){
+            let a = 1;
+            let b = 1;
+            let arr =[1,1];
+            if (n === 1) {
+                return arr[0];
+            }
+            if (n === 2){
+                return arr;
+            }
+            for (let i = 2; i < n; i++){
+                arr[i] = a + b;
+                let c = b;
+                b += a;
+                a = c;
+            }
+            return arr;
+        }
+        let value = parseInt(prompt("Введите количество чисел Фибоначи: ")); 
+        console.log(fibonachi(value));
+    </script>
+-->
+
+<!--task 4-->
+    <script>
+        function days(n){
+            let c  = n % 10;
+            if(c === 1)
+                return "день";
+            if (c >= 2 && c <=4 ) 
+                return "дня";
+            if (c === 0 || (c > 4 && c <10))
+                return "дней";
+        }
+        let n = parseInt(prompt("Введите количество дней: "));
+        console.log(n + " " + days(n));
+    </script>
+</body>
+</html>
