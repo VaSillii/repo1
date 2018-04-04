@@ -15,13 +15,17 @@
     padding: 0 15px;
     margin-top: 20px;
 }
-.navigate li{
+.navigate>li{
     display: inline-block;
 }
 .navigate li a{
     list-style: none;
     text-decoration: none;
     color: #fff;
+}
+ul.navigate>li>a:hover{
+    color: #000;
+    cursor: pointer;
 }
 .content1{
     width: 1140px;
@@ -112,18 +116,31 @@
     background: #fff;
     color: #000;
 }
-.section3{
-/*    sheight: 810px;*/
+
+.portfolio-nav{
+    text-align: center;
+    margin-top: 60px;
 }
-.section3 nav ul{
-    text-decoration: none;
+
+
+ul.portfolio-nav>li {
     list-style: none;
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 0 20px;
+    position: relative;
+    opacity: 0.7;
+}
+.title{
+    margin-top: 80px
+}
+.title>h3{
     text-align: center;
 }
-.section3 nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-    margin-top: 60px;
+
+ul.portfolio-nav>li:hover {
+    color: #a2cf8e;
+    cursor: pointer;
 }
 .photo-gallery{
     display: flex;
@@ -132,15 +149,20 @@
     justify-content: space-between;
     font-size: 0;
     margin-top: 55px;
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    
 }
 .our-portfolio h2{
     text-align: center;
 }
-.photo-gallery-item img {
-    width: 250px;
-    min-height: 250px;
-    padding-bottom: 15px
+.photo-gallery__item {
+    padding-bottom: 15px;
+    opacity: 0.8;
+}
+
+.photo-gallery__item:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 
@@ -151,28 +173,23 @@
     background-size: cover;
     min-height: 750px;
 }
-/*
-.firstSection5{
-    position: relative;
-}
-.firstSection5 div{
-    position: absolute;
-}
-*/
+
 .sectionLeft{
-background: url(../img/blog_01.jpg) no-repeat;
+    background: url(../img/blog_01.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 456px;
+    margin-top: 55px;;
     
 }
 .firstSection5{
     height: 80px;
     width: 100%;
-    background-size: cover;
-    float: left;
-    min-height: 456px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+
+    
     
 }
 .secondSection5 .dopSection{
@@ -219,7 +236,34 @@ background: url(../img/blog_01.jpg) no-repeat;
     height: 35px;
     width: 35px;
 }
-footer{
+/*
+.footPict{
     background: url(../img/contact-bg.png) no-repeat;
     background-size: cover;
+    min-height: 575px;
+    padding-bottom: 0;
+    font-size: 0;
+}
+footer>div:last-child{
+    width: 100%;
+    height: 95px;
+    background: #000;
+    margin-top: 10px;
+}
+*/
+
+footer>section{
+    background: url(../img/contact-bg.png) no-repeat;
+    background-size: cover;
+    min-height: 575px;
+}
+footer>div{
+    min-height: 80px;
+    background: #000;
+    color: #fff;
+    margin-top: -16px;
+}
+footer>section>.container>h3{
+    text-align: center;
+    color: #fff;
 }
