@@ -1,61 +1,99 @@
-.topheader{
-    position: relative;
-    background: url(../img/slide_03.jpg) no-repeat;
-    background-size: cover;
-    min-height: 650px;
+/*Header start*/
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.logo{
-    margin-top: 25px; 
+.main-title{
+    font-size: 2.2rem;
+    text-align: center;
 }
-.container{
-    width: 1140px;
-    margin: 0 auto;
+.main-content{
+    font-size: 17px;
 }
-.navigatePanel li{
-    padding: 0 15px;
-    margin-top: 20px;
+.description{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-.navigate>li{
+
+.logo {
     display: inline-block;
+    height: 40px;
+    margin: 15px 0;
 }
-.navigate li a{
-    list-style: none;
+nav {
+    float: right;
+}
+nav ul {
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li:last-of-type {
+    margin-right: 0;
+}
+nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: inherit;
+    font-size: 0.9rem;
+    line-height: 70px;
 }
-ul.navigate>li>a:hover{
-    color: #000;
-    cursor: pointer;
+nav ul li a:hover {
+    border-bottom: 2px solid #f4f4f4;
 }
-.content1{
-    width: 1140px;
-    margin: 0 auto;
+.box-header {
     position: relative;
+    min-height: 680px;
+    background: url(/img/slide_03.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #f4f4f4;
+    animation: sliding 15s ease infinite 0s alternate;
 }
-.contentHead{
+
+@keyframes sliding {
+    0% {
+        background-image: url(/img/slide_03.jpg);
+    }
+    50% {
+        background-image: url(/img/slide_02.jpg);
+    }
+    100% {
+        background-image: url(/img/slide_01.jpg);
+    }
+}
+
+.centerWrite{
+    width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateY(-50%);
     text-align: center;
-    color: #fff;
+}
+.greenButton{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #a2cf8e;
+    color: #f4f4f4;
+    margin-top: 20px;
+    font-size: 0.7rem;
     
 }
-.buttonHead{
-    text-align: center;
-    padding: 10px 15px;
-    border-radius: 15px;
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    background: #a2cf8e;
-}
+/*Header end*/
+
+
+/*table Box what we do start*/
 .section1{
     height: 500px;
     margin-top: 90px;
 }
-.section1 h2{
+.sect-h2{
     text-align: center;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -70,7 +108,7 @@ ul.navigate>li>a:hover{
     margin-top: 10px;
 }
 .containerBox{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .box{
@@ -78,12 +116,18 @@ ul.navigate>li>a:hover{
     background: white;
     padding: 40px 20px;
     text-align: center;
-    min-width: 250px;
+    max-width: 300px;
     min-height: 200px
 }
-.box-group .col-3 .box{
-    margin: 0px 10px;
+.box-group div .box{
+    margin: 0 15px;
     font-size: 13px;
+}
+.box>h2{
+    margin-bottom: 15px;
+}
+.imges{
+    margin-bottom: 20px;
 }
 .row::after {
     content: ".";
@@ -92,7 +136,11 @@ ul.navigate>li>a:hover{
     height: 0;
     visibility: hidden;
 }
-.mill-container{
+
+/*table Box what we do end*/
+
+/*section mill start*/
+    .mill-container{
     background: url(../img/what-we-do-bg.png) no-repeat;
     background-size: cover;
     min-height: 560px;
@@ -101,7 +149,10 @@ ul.navigate>li>a:hover{
 .millText{
     color: #fff;
     margin-top: 90px;
-    font-size: 15px
+    font-size: 15px;
+}
+.millText>div{
+    margin-top: 30px;
 }
 .pictureSection2{
     margin-top: 80px;
@@ -116,12 +167,13 @@ ul.navigate>li>a:hover{
     background: #fff;
     color: #000;
 }
+/*section mill end*/
 
+/*section portfolio start*/
 .portfolio-nav{
     text-align: center;
     margin-top: 60px;
 }
-
 
 ul.portfolio-nav>li {
     list-style: none;
@@ -164,45 +216,76 @@ ul.portfolio-nav>li:hover {
     opacity: 1;
     cursor: pointer;
 }
+/*section portfolio end*/
 
 
-
-
-.section5{
+/*section blog post start*/
+.blockPost {
     background: url(../img/blog-bg.png) no-repeat;
     background-size: cover;
     min-height: 750px;
 }
+.titleBlog{
+    padding-top: 90px;
+}
 
-.sectionLeft{
+.blockLeft {
     background: url(../img/blog_01.jpg) no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    background-position: center center;
     min-height: 456px;
-    margin-top: 55px;;
-    
+    position: relative;
 }
-.firstSection5{
-    height: 80px;
-    width: 100%;
-
-    
-    
-}
-.secondSection5 .dopSection{
+.upBlock {
     background: url(../img/blog_02.jpg) no-repeat;
     background-size: cover;
+    background-position: center center;
+    min-height: 215px;
+    position: relative;
+    margin-bottom: 26px;
 }
-.secondSection5 .dopSection2{
+.bottonBlock {
     background: url(../img/blog_03.jpg) no-repeat;
     background-size: cover;
+    background-position: center center;
+    min-height: 215px;
+    position: relative;
+}
+.blockRight {
+    padding-left: 28px;
+}
+.blackBlock {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: rgba(0, 0, 0, 0);
+    padding: 15px;
+    transition-property: background,color;
+    
+    transition-duration: 1.3s;
+    
+}
+.blackBlock:hover{
+   background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+.upBlock>blackBlock:{
+    opacity: 1;
+    cursor: pointer;
 }
 
+/*section blog post end*/
 
 
+/*section client start*/
+.clientSection{
+    background: #fff;
+    margin-bottom: -25px;
+    min-height: 320px;
+    padding-top: 100px;
+    margin-top: -20px;
+}
 .box-1{
     box-shadow: none;
     background: #f4f4f4;
@@ -211,10 +294,12 @@ ul.portfolio-nav>li:hover {
 .containerBox-1{
     margin-top: 120px;
     margin-bottom: 100px;
+    background: #fff;
 }
 .number{
     color: #b0cd91;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 1.35rem;
 }
 .icons {
     display:inline-flex;
@@ -236,34 +321,121 @@ ul.portfolio-nav>li:hover {
     height: 35px;
     width: 35px;
 }
-/*
-.footPict{
-    background: url(../img/contact-bg.png) no-repeat;
-    background-size: cover;
-    min-height: 575px;
-    padding-bottom: 0;
-    font-size: 0;
-}
-footer>div:last-child{
-    width: 100%;
-    height: 95px;
-    background: #000;
-    margin-top: 10px;
-}
-*/
 
-footer>section{
-    background: url(../img/contact-bg.png) no-repeat;
+/*section client end*/
+
+/*footer section start*/
+.contact {
+    background-image: url(/img/contact-bg.png);
     background-size: cover;
-    min-height: 575px;
+    background-position: center center;
+    height: 570px;
 }
-footer>div{
+.contact .container h2{
+    color: #fff;
+    padding-top: 80px;
+}
+
+.contact .container h2:after{
+    background: #fff;
+}
+
+input {
+    background: rgba(128, 128, 128, 0.2);
+    border: none;
+    padding: 15px 15px;
+    width: 100%;
+}
+
+.form_textarea {
+    height: 74%;
+    padding: 5% 0;
+}
+
+textarea {
+    background: rgba(128, 128, 128, 0.2);
+    border: none;
+    padding: 10px 10px;
+    font-family: inherit;.
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact .contact_box{
+    margin: 0 15px;
+    max-width: 555px;
+    height: 312px;
+}
+
+.contact_box img {
+    max-width: 100%;
+}
+
+.form_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_type {
+    width: 47%;
+}
+
+
+/*footer section end*/
+
+
+
+
+/*footer start*/
+footer{
     min-height: 80px;
-    background: #000;
+    background: #202528;
     color: #fff;
-    margin-top: -16px;
+
 }
-footer>section>.container>h3{
+.social:first-child{
+    font-size: 0.9rem;
+}
+.copyText{
+    margin-top: 35px;
+    font-size: 0.8rem;
+}
+.spanText{
+    color: #b33854;
+}
+.icons{
+    margin-top: 25px;
+    color: #000;
+    padding-left: 80px;
+    
+}
+.icons>a{
+    border: 1px solid #fff;
+    background: #a2cf8e;
+    padding: 10px;
+    border-radius: 50%;
+}
+/*footer end*/
+
+/*banner start*/
+.modal {
+
+    top: 50%;
+    transform: translateY(40%);
+    right: 1%;
     text-align: center;
-    color: #fff;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+} 
+
+.content input {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(128, 128, 128);
+    padding: 10px 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
 }
+/*banner end*/

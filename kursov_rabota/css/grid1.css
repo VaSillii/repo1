@@ -1,16 +1,16 @@
-* {
+*{
     box-sizing: border-box;
+    font-family: "Open Sans";
+}
+body{
+    padding: 0;
     margin: 0;
-    padding: 0;  
 }
-body {
-    font-family: "Awesome","Open Sans", Arial, sans-serif;
-    background: #f2f2f2;
-/*    font-size: 12px;*/
-}
+
 .container{
-    width: 1140px;
-    margin: 0 auto;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
