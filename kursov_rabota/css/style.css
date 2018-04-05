@@ -266,9 +266,10 @@ ul.portfolio-nav>li:hover {
     transition-duration: 1.3s;
     
 }
-.blackBlock:hover{
+.blockLeft:hover .blackBlock, .upBlock:hover .blackBlock, .bottonBlock:hover .blackBlock {
    background: rgba(0, 0, 0, 0.4);
     color: #fff;
+    cursor: pointer;
 }
 .upBlock>blackBlock:{
     opacity: 1;
