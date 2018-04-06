@@ -5,14 +5,14 @@ header {
     top: 0;
     left: 0;
 }
-.main-title{
+.main-title {
     font-size: 2.2rem;
     text-align: center;
 }
-.main-content{
+.main-content {
     font-size: 17px;
 }
-.description{
+.description {
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -22,28 +22,35 @@ header {
     height: 40px;
     margin: 15px 0;
 }
+
 nav {
     float: right;
 }
+
 nav ul {
     text-align: right;
 }
+
 nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
+
 nav ul li:last-of-type {
     margin-right: 0;
 }
+
 nav ul li a {
     text-decoration: none;
     color: inherit;
     font-size: 0.9rem;
     line-height: 70px;
 }
+
 nav ul li a:hover {
     border-bottom: 2px solid #f4f4f4;
 }
+
 .box-header {
     position: relative;
     min-height: 680px;
@@ -66,14 +73,15 @@ nav ul li a:hover {
     }
 }
 
-.centerWrite{
+.centerWrite {
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
 }
-.greenButton{
+
+.greenButton {
     text-decoration: none;
     list-style: none;
     text-align: center;
@@ -83,22 +91,23 @@ nav ul li a:hover {
     color: #f4f4f4;
     margin-top: 20px;
     font-size: 0.7rem;
-    
 }
 /*Header end*/
 
 
 /*table Box what we do start*/
-.section1{
+.section1 {
     height: 500px;
     margin-top: 90px;
 }
-.sect-h2{
+
+.sect-h2 {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 20px;
 }
-.sect-h2::after{
+
+.sect-h2::after {
     content:"";
     display: block;
     height: 3px;
@@ -107,11 +116,12 @@ nav ul li a:hover {
     margin: auto;
     margin-top: 10px;
 }
-.containerBox{
+
+.containerBox {
     margin-top: 80px;
 }
 
-.box{
+.box {
     box-shadow: 0 0 10px 1px #888888;
     background: white;
     padding: 40px 20px;
@@ -119,16 +129,20 @@ nav ul li a:hover {
     max-width: 300px;
     min-height: 200px
 }
-.box-group div .box{
+
+.box-group div .box {
     margin: 0 15px;
     font-size: 13px;
 }
-.box>h2{
+
+.box>h2 {
     margin-bottom: 15px;
 }
-.imges{
+
+.imges {
     margin-bottom: 20px;
 }
+
 .row::after {
     content: ".";
     clear: both;
@@ -136,41 +150,45 @@ nav ul li a:hover {
     height: 0;
     visibility: hidden;
 }
-
 /*table Box what we do end*/
 
 /*section mill start*/
-    .mill-container{
+.mill-container {
     background: url(../img/what-we-do-bg.png) no-repeat;
     background-size: cover;
     min-height: 560px;
     position: relative;
 }
-.millText{
+
+.millText {
     color: #fff;
     margin-top: 90px;
     font-size: 15px;
 }
-.millText>div{
+
+.millText>div {
     margin-top: 30px;
 }
-.pictureSection2{
+
+.pictureSection2 {
     margin-top: 80px;
     text-align: right;
 }
-.millText a{
+
+.millText a {
     margin-top: 30px;
     margin-right: 20px;
     display: inline-block;
 }
-.millText span a{
+
+.millText span a {
     background: #fff;
     color: #000;
 }
 /*section mill end*/
 
 /*section portfolio start*/
-.portfolio-nav{
+.portfolio-nav {
     text-align: center;
     margin-top: 60px;
 }
@@ -183,10 +201,12 @@ ul.portfolio-nav>li {
     position: relative;
     opacity: 0.7;
 }
-.title{
+
+.title {
     margin-top: 80px
 }
-.title>h3{
+
+.title>h3 {
     text-align: center;
 }
 
@@ -194,7 +214,8 @@ ul.portfolio-nav>li:hover {
     color: #a2cf8e;
     cursor: pointer;
 }
-.photo-gallery{
+
+.photo-gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -202,11 +223,12 @@ ul.portfolio-nav>li:hover {
     font-size: 0;
     margin-top: 55px;
     margin-bottom: 4rem;
-    
 }
-.our-portfolio h2{
+
+.our-portfolio h2 {
     text-align: center;
 }
+
 .photo-gallery__item {
     padding-bottom: 15px;
     opacity: 0.8;
@@ -218,14 +240,14 @@ ul.portfolio-nav>li:hover {
 }
 /*section portfolio end*/
 
-
 /*section blog post start*/
 .blockPost {
     background: url(../img/blog-bg.png) no-repeat;
     background-size: cover;
     min-height: 750px;
 }
-.titleBlog{
+
+.titleBlog {
     padding-top: 90px;
 }
 
@@ -236,6 +258,7 @@ ul.portfolio-nav>li:hover {
     min-height: 456px;
     position: relative;
 }
+
 .upBlock {
     background: url(../img/blog_02.jpg) no-repeat;
     background-size: cover;
@@ -244,6 +267,7 @@ ul.portfolio-nav>li:hover {
     position: relative;
     margin-bottom: 26px;
 }
+
 .bottonBlock {
     background: url(../img/blog_03.jpg) no-repeat;
     background-size: cover;
@@ -251,9 +275,11 @@ ul.portfolio-nav>li:hover {
     min-height: 215px;
     position: relative;
 }
+
 .blockRight {
     padding-left: 28px;
 }
+
 .blackBlock {
     position: absolute;
     bottom: 0;
@@ -262,52 +288,54 @@ ul.portfolio-nav>li:hover {
     color: rgba(0, 0, 0, 0);
     padding: 15px;
     transition-property: background,color;
-    
-    transition-duration: 1.3s;
-    
+    transition-duration: 1.3s; 
 }
+
 .blockLeft:hover .blackBlock, .upBlock:hover .blackBlock, .bottonBlock:hover .blackBlock {
    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     cursor: pointer;
 }
-.upBlock>blackBlock:{
+
+.upBlock>blackBlock {
     opacity: 1;
     cursor: pointer;
 }
-
 /*section blog post end*/
 
 
 /*section client start*/
-.clientSection{
+.clientSection {
     background: #fff;
     margin-bottom: -25px;
     min-height: 320px;
     padding-top: 100px;
     margin-top: -20px;
 }
-.box-1{
+
+.box-1 {
     box-shadow: none;
     background: #f4f4f4;
     min-height: 130px;
 }
-.containerBox-1{
+
+.containerBox-1 {
     margin-top: 120px;
     margin-bottom: 100px;
     background: #fff;
 }
-.number{
+
+.number {
     color: #b0cd91;
     padding-bottom: 5px;
     font-size: 1.35rem;
 }
+
 .icons {
     display:inline-flex;
     width: 215px;
     justify-content: space-between;
 }
-
 
 .icons a {
     font-family: 'FontAwesome';
@@ -322,7 +350,6 @@ ul.portfolio-nav>li:hover {
     height: 35px;
     width: 35px;
 }
-
 /*section client end*/
 
 /*footer section start*/
@@ -332,12 +359,13 @@ ul.portfolio-nav>li:hover {
     background-position: center center;
     height: 570px;
 }
-.contact .container h2{
+
+.contact .container h2 {
     color: #fff;
     padding-top: 80px;
 }
 
-.contact .container h2:after{
+.contact .container h2:after {
     background: #fff;
 }
 
@@ -363,8 +391,7 @@ textarea {
     height: 100%;
 }
 
-
-.contact .contact_box{
+.contact .contact_box {
     margin: 0 15px;
     max-width: 555px;
     height: 312px;
@@ -382,61 +409,74 @@ textarea {
 .form_type {
     width: 47%;
 }
-
-
 /*footer section end*/
 
-
-
-
 /*footer start*/
-footer{
+footer {
     min-height: 80px;
     background: #202528;
     color: #fff;
+}
 
-}
-.social:first-child{
-    font-size: 0.9rem;
-}
-.copyText{
+.copyText {
     margin-top: 35px;
     font-size: 0.8rem;
 }
-.spanText{
+.spanText {
     color: #b33854;
 }
-.icons{
+.icons {
     margin-top: 25px;
     color: #000;
-    padding-left: 80px;
-    
+    padding: 0 30px;
 }
-.icons>a{
+
+.icons>a {
     border: 1px solid #fff;
     background: #a2cf8e;
     padding: 10px;
     border-radius: 50%;
+    background-image: #202528;
 }
 /*footer end*/
 
 /*banner start*/
 .modal {
-
     top: 50%;
     transform: translateY(40%);
     right: 1%;
     text-align: center;
     width: 300px;
     height: 300px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(191, 207, 142, 0.17);
     position: fixed;
 } 
 
+.modal {
+    display: none;
+}
 .content input {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0.3);
     border: 1px solid rgb(128, 128, 128);
     padding: 10px 10px;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+.close {
+    text-align: right;
+}
+
+.form-input input {
+    margin-top: 15px;
+    width: 280px;
+}
+
+.form-a {
+    margin-top: 40px;
+}
+
+.form-a .greenButton {
+    border: 1px solid #000;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
 }
 /*banner end*/
