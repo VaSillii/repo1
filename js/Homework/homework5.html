@@ -20,7 +20,7 @@
             interest:["web", "javaScript"],
             placeOfStudy: "university"
         }
-        let x = info(student);
+        info(student);
     </script>
 -->
 
@@ -71,12 +71,13 @@
 <!--task 4-->
     <script>
         function days(n){
-            let c  = n % 10;
-            if(c === 1)
+            let a  = n % 10;
+            let b = n % 100;
+            if(a === 1 && b !== 11)
                 return "день";
-            if (c >= 2 && c <=4 ) 
+            if (a > 1 && a < 5 && (b < 10 || b > 21)) 
                 return "дня";
-            if (c === 0 || (c > 4 && c <10))
+            if (a === 0 || (a > 4 || a < 10))
                 return "дней";
         }
         let n = parseInt(prompt("Введите количество дней: "));
