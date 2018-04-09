@@ -37,63 +37,28 @@
 -->
 
 <!--task 3-->
-    <script>
-//        function rand() {
-//            let arr = [];
-//            for (let i = 1; i < 101; i++) {
-//                arr[i] = i;
-//            }
-//            return function() {
-//                return 0;
-//            }
-//                
-////                if (this.arr.length !== 0) {
-////                    let index = Math.floor(Math.random() * 101);
-////                    if (arr[index]){
-////                        let a = arr[index];
-////                        arr[index].delete;
-////                        return a;
-////                    }
-////                } else { 
-////                    for (let i = 1; i < 101; i++) {
-////                        arr[i] = i;
-////                    } 
-////                }
-//                
-//            }
-//        console.log(rand());
-        
-        function randomNumber() {
-			let arr = [];
-			let i = 1;
-			function checkPrevious(arr,num) {
-				for (let i = 0; i < arr.length; i++) {
-					if(arr[i] === num) return true;
-				}
-				return false;
-			}
-			
-			return function() {
-				if (i > 100) return null;
-                
-				while (i <= 100) {
-					let num = Math.floor(Math.random()*100 + 1);
-                    
-					if (!(checkPrevious(arr,num))) {
-						arr.push(num);
-						i++;
-                        
-						return num;
-                        
-					} else {
-						continue;
-					}
-				} 
-			}
-		}
-		let random = randomNumber();
-		console.log(random());
-		
-    </script>
+<script>
+     var rand = (function(){
+         var arr = [];
+         function fill(){
+             let arr1 = [];
+             for (let i = 1; i !== 100; i++){
+                 arr1.push(i);
+             }         
+             return arr1;
+         }
+         return function(){
+             if (arr.length === 0) {
+                 arr = fill();
+             }
+             let number = Math.floor(Math.random()*100 + 1);
+             if (arr.indexOf(number) !== -1) {
+                 delete arr[arr.indexOf(number)];
+                 return number;
+             }
+         }
+     }());
+    console.log(rand());
+</script>
 </body>
 </html>
