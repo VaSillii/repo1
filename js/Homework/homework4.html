@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        td{
+            height: 20px;
+            width: 20px;
+            border: 1px solid;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <!--firtst task-->
@@ -18,8 +26,36 @@
 
 <!--task 2-->
     <script>
-        let a = [ 1, null, 0, null, 1, null, null, null, null ];
+        let gamePlace = [ 1, null, 0, null, 1, null, null, null, null ];
         
+        var arr = [];
+        for (let i = 0; i < gamePlace.length; i++){
+            if(gamePlace[i] === null){
+                arr.push('');
+            }else if(gamePlace[i] === 1){
+                    arr.push('X');
+            }else{
+                arr.push('0');
+            }
+        }
+        var str = "<table><tbody>" + 
+            "<tr>" + 
+                "<td>" + arr[0] +"</td>" +
+                "<td>" + arr[1] +"</td>" +
+                "<td>" + arr[2] +"</td>" +
+            "</tr><tr>" + 
+                "<td>" + arr[3] +"</td>" +
+                "<td>" + arr[4] +"</td>" +
+                "<td>" + arr[5] +"</td>" +
+            "</tr><tr>" +
+                "<td>" + arr[3] +"</td>" +
+                "<td>" + arr[4] +"</td>" +
+                "<td>" + arr[5] +"</td>" +
+            "</tr>" +
+            "</tbody></table>";
+        
+        
+        document.write(str);
     </script>
 
 <!--Third task-->
