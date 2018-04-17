@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <script>
+        var arr = ['asdf', 'sdfssdf', 'sd'];
+        var arr2 = arr.
+        
+        
+        var arr = [1, 2,-3, -4];
+        var arr2 = arr.filter(function(el){
+            return el > 0;
+        }.map(function(el){
+            return Math.sqrt(el);
+        }))
+    </script>
+-->
+
+    <script>
+        'use strict';
+        var obj = {};
+        Object.defineProperty(obj, "test", {
+            value: 54,
+            writable: false 
+        });
+        console.log(obj.test);
+        obj.test = "sdf";
+        console.log(obj.test);
+    </script>
+</body>
+</html>

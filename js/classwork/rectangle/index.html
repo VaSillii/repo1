@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .field {
+            height: 300px;
+            width: 300px;
+            background-color: gray;
+            position: relative;
+        }
+        
+        .box {
+            height: 20px;
+            width: 20px;
+            background-color:  red;
+/*            position: absolute;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="box" style="left: 0px; top:0px;"></div>
+        <script>
+            var boxEl = document.querySelector('.box'); //передается свойство по css
+            document.onkeydown = function(e) {
+//                console.log(e.keyCode);
+                switch(e.keyCode) {
+                    case 40: 
+                        //вниз
+                        boxEl.style.top = (parseInt(boxEl.style.top) + 5) + "px";
+                        break;
+                    case 38: 
+                        //вверх
+                        boxEl.style.top = (parseInt(boxEl.style.top) - 5) + "px";
+                        break;
+                    case 40: 
+                        //вниз
+                        boxEl.style.top = (parseInt(boxEl.style.top) + 5) + "px";
+                        break;
+                    case 37: 
+                        //влево
+                        boxEl.style.left = (parseInt(boxEl.style.left) + 5) + "px";
+                        break;
+                    case 37: 
+                        //влево
+                        boxEl.style.left = (parseInt(boxEl.style.left) - 5) + "px";
+                        break;
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
