@@ -25,6 +25,7 @@ function inFo(product) {
     art.style.background = 'blue';
     art.style.padding = '45px 0';
     
+    
     let desc = document.createElement('div');
     desc.innerHTML =  this.description;
     desc.style.textAlign = 'center';
