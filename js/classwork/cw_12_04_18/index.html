@@ -20,6 +20,7 @@
     </script>
 -->
 
+<!--
     <script>
         'use strict';
         var obj = {};
@@ -31,5 +32,99 @@
         obj.test = "sdf";
         console.log(obj.test);
     </script>
+-->
+
+<!--
+
+    <script>
+        function Iterator(_from, _to) {
+            this._form = _from;
+            this._to = _to;
+            
+            var curr = _from;
+            
+            this.next = function() {
+                if (this._form < this._to) 
+                    curr++;
+                else if (this._form > this._to)
+                    curr--;
+                
+                return curr;
+            }
+        }
+        var myIterator = new Iterator(10,20);
+        console.log(myIterator.next());
+        console.log(myIterator.next());
+        console.log(myIterator.next());
+    </script>
+-->
+
+
+<!--
+    <div id="box" style="height: 200px; width: 200px;"></div>
+    
+    <script>
+        function Iterator(_from, _to) {
+            this._form = _from;
+            this._to = _to;
+            
+            var curr = _from;
+            
+            this.next = function() {
+                if (this._form < this._to) 
+                    curr++;
+                else if (this._form > this._to)
+                    curr--;
+                
+                return curr;
+            }
+        }
+    
+        function IteratorSecondGeneration(_from, _to) {
+            Iterator.call(this, _from, _to);
+            
+            this.nextSecondGeneration = function() {
+                var num = this.next();
+                if (num === this._to) {
+                    var temp = this._to;
+                    this._to = this._form;
+                    this._form = temp;
+                }
+                return num;
+            }
+        }
+        var myIterator = new IteratorSecondGeneration(10,20);
+        for (var i = 0; i < 40; i++)
+            console.log(myIterator.nextSecondGeneration());
+        var myIterator1 = new IteratorSecondGeneration(0,230);
+        var myIterator2 = new IteratorSecondGeneration(0,255);
+        var myIterator3 = new IteratorSecondGeneration(0,245);
+        
+        setInterval(function() {
+            box.style.backgroundColor = 'rgb(' + myIterator1.nextSecondGeneration + ','+
+            myIterator2.nextSecondGeneration + ','+
+            myIterator3.nextSecondGeneration + ')';
+        },100);
+    </script>
+-->
+
+
+<!--полиморфный конструктор-->
+    <script>
+       function User(name) {
+           if (name === undefined) 
+               this.name = "Аноним";
+            else
+                this.name = name;
+            this.toString = function() {
+                return "Привет я " + this.name;
+            }
+       } 
+        var anom = new User();
+        var user = new User("Sasha");
+        alert(anom);
+           alert(user);
+    </script>
+
 </body>
 </html>
